@@ -7,9 +7,19 @@ namespace TDD_Calculator.CustomCalculatorSystem
         //! 1+2 = 3
         //! Add(1,2) => 3
         //! ToString => (1+2) = 3
-        
+
         //! Sub(1,2)=>-1
         //! ToString => (1-2) = -1
+
+        [Fact]
+        public void When_create_CalculatorSystem_Expect_get_success()
+        {
+            var _sut = new CalculatorSystem();
+
+            _sut.Should().NotBeNull();
+            _sut.ToString().Should().Be("");
+        }
+
 
         [Fact]
         public void When_call_add_method_Expect_get_sum_of_numbers()
