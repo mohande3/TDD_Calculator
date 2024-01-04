@@ -1,2 +1,2 @@
 # TDD : calculator example
-new feature
+این یک مثال کاملا ساده در مورد TDD در قالب یک پروژه ساده در مورد ماشین حساب است
