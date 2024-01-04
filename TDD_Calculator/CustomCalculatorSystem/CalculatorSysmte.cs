@@ -19,6 +19,7 @@ namespace TDD_Calculator.CustomCalculatorSystem
             num1 = number1;
             num2 = number2;
             result = number1 + number2;
+            operatorName = "+";
             return result;
         }
 
