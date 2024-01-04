@@ -9,9 +9,20 @@ namespace TDD_Calculator
         {
         }
 
-        public object Add(int number1, int number2)
+        //public object Add(int number1, int number2)
+        //{
+        //    return number1 + number2;
+        //}
+        public object Add(params int[] numbers)
         {
-            return number1 + number2;
+            //var result = 0;
+            //foreach (var item in numbers)
+            //{
+            //    result += item;
+            //}
+            //return result;
+
+            return numbers.Sum(x => x);
         }
 
         internal object Mul(int number1, int number2)

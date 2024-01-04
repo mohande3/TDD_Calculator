@@ -9,6 +9,8 @@ namespace TDD_Calculator
         //todo Step2 : Write some code for pass test
         //todo Step3 : Refactor
 
+        //Add(1,2,3,4,5,6,7,.....)
+
         [Fact]
         public void Test_Add_Method()
         {
@@ -17,6 +19,16 @@ namespace TDD_Calculator
             var result = _sut.Add(1, 2);
 
             result.Should().Be(3);
+        }
+
+        [Fact]
+        public void Test_Add_multi_numners_Method()
+        {
+            var _sut = new Calculator();
+
+            var result = _sut.Add(1, 2, 2, 3, 4);
+
+            result.Should().Be(12);
         }
 
 
